@@ -18,7 +18,7 @@ class Servico(Base):
                            variations={
                                'thumb': {
                                    'width': 480,
-                                   'height': 480,
+                                   'height': 380,
                                    'crop': True
                                }
                            }
