@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6%@$4a1-buq$t=%j7(6@a7s=xpwf@(!1s27!xug1_d9y3+#$tm'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-6%@$4a1-buq$t=%j7(6@a7s=xpwf@(!1s27!xug1_d9y3+#$tm')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -134,7 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # configura e-mail para produção
-EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = 'ee63250a4cd926'
-EMAIL_HOST_PASSWORD = 'ea5ac18db409f6'
-EMAIL_PORT = '2525'
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = 'ee63250a4cd926'
+# EMAIL_HOST_PASSWORD = 'ea5ac18db409f6'
+# EMAIL_PORT = '2525'
